@@ -22,6 +22,7 @@ Successfully installed joblib-1.1.0 scikit-learn-1.0.2 scipy-1.8.0 threadpoolctl
 # Check download
 !pip freeze | grep scikit
 
+# Output
 """
 scikit-learn==1.0.2
 """
