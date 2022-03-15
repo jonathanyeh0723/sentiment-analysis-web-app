@@ -19,6 +19,13 @@ Installing collected packages: threadpoolctl, scipy, joblib, scikit-learn
 Successfully installed joblib-1.1.0 scikit-learn-1.0.2 scipy-1.8.0 threadpoolctl-3.1.0
 """
 
+# Check download
+!pip freeze | grep scikit
+
+"""
+scikit-learn==1.0.2
+"""
+
 # Start check
 from sklearn import shuffle
 import numpy as np
