@@ -1,0 +1,14 @@
+# Install scikit-learn (This can be referred to https://scikit-learn.org/stable/install.html)
+pip install -U scikit-learn
+
+# Start check
+from sklearn import shuffle
+import numpy as np
+
+x = np.array([1, 2], [3, 4], [5, 6])
+print(x)
+```
+array([[1, 2],
+       [3, 4],
+       [5, 6]])
+```
