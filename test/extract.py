@@ -22,6 +22,6 @@ def read_imdb(data_dir="aclImdb"):
             for f in files:
                 with open(f) as review:
                     data[data_type][sentiment].append(review.read())
-                    labels[data_type][sentiment].append(1 if sentiment == 1 else 0)
+                    labels[data_type][sentiment].append(1 if sentiment == 'pos' else 0)
 
     return data, labels
