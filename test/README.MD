@@ -18,3 +18,11 @@ Out[3]: 'I\'ve always knew Anne DeSalvo was a great character actor, now I know 
 In [4]: labels['train']['pos'][13]
 Out[4]: 1
 ```
+
+**Expected output:**
+```
+IMDB reviews: train = 12500 pos / 12500 neg, test = 12500 pos / 12500 neg
+
+IMDb reviews (combined): train = 25000, test = 25000
+
+```
