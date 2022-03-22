@@ -29,6 +29,16 @@ IMDb reviews (combined): train = 25000, test = 25000
 
 ## Note for review_to_words
 
+並不是所有的資料都能這麼方便地以表格式資料（Tabular data），EXCEL 試算表或者 JSON 載入工作環境，有時候我們的資料散落在網路不同的角落裡，然而並不是每一個網站都會建置 API（Application Programming Interface）讓你很省力地把資料帶回家，這時候我們就會需要網頁解析（Web scraping）。
+
+R 語言使用者對於 rvest 套件在網頁解析的便利性愛不釋手，而 Python 對應的代表套件就是 BeautifulSoup，事實上，rvest 開發的靈感就是啟發自 BeautifulSoup。
+
+準備工作
+除了 BeautifulSoup 套件以外，我們還需要搭配使用 lxml 套件與 requests 套件。由於我們的開發環境是安裝 Anaconda，所以這些套件都不需要再另外下載與安裝，只要進行一貫的 import 就好。如果對於開發環境的部分有興趣，我推薦你參考 [第 01 天] 建立開發環境與計算機應用。
+
+lxml 套件
+lxml 套件是用來作為 BeautifulSoup 的解析器（Parser），BeautifulSoup 可以支援的解析器其實不只一種，還有 html.parser（Python 內建）與 html5lib，根據官方文件的推薦，我們使用解析速度最快的 lxml。
+
 ```
 from extract import read_imdb
 from shuffle_imdb import prepare_imdb_data
